@@ -3,5 +3,12 @@
     "description": "Aplikasi PHP",
     "require": {
         "symfony/console": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Console\\": "src",
+            "Model\\": "src"
+        },
+        "classmap": ["src"]
     }
 }
